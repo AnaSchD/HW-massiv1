@@ -54,5 +54,31 @@ public class Main {
         int f2 = c[0];
         System.out.println(f2);
 
+        //task4
+
+        for (int i = 0; i < 2; i++)
+        {
+            if (a[i] % 2 == 0)
+            {
+                System.out.print(a[i] + ",");
+
+            } else
+
+            {
+                System.out.print(a[i] + 1 + ",");
+            }
+
+        }
+
+            if (a[a.length-1]%2==0)
+                {
+                    System.out.println(a[a.length-1]);
+                }
+            else
+                {
+                    System.out.println(a[a.length-1]+1);
+                }
+
+
     }
 }
