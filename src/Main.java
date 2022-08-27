@@ -118,21 +118,30 @@ public class Main {
         System.out.println();
 
             //task6*
+
         int[] q = {5, 4, 3, 2, 1};
        System.out.println(Arrays.toString(q));
 
-       int [] w = new int[q.length];
-       int i1 = 0;
+        int[] w = new int [q.length];
 
-       for ( int i = 0; i < q.length ; i++)
-            {
-                w [i1 ++] = q [q.length -1 - i];
-            }
-       System.out.println(Arrays.toString(w));
+        for (int i = q.length - 1, a1 = 0; i >= 0; i--,a1++)
+        {
+            w[a1] =q[i];
+        }
+        System.out.println(Arrays.toString(w));
+        System.out.println();
 
-    }
         //task7*
+        System.out.println(Arrays.toString(q));
 
+        for (int i = 0, e = 0, r = q.length-1; i < q.length / 2; i++, r--)
+        {
+            e = q[i];
+            q[i] = q[r];
+            q[r] = e;
+        }
+        System.out.println(Arrays.toString(q));
+    }
 
 }
 
