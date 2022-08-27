@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
 
 
@@ -97,12 +99,12 @@ public class Main {
         }
         System.out.println();
 
-        //task5
+        //task5*
         int[][] matrix = new int[3][3];
 
         for (int i = 0; i < matrix.length; i++)
         {
-            for (int j = 0; j < matrix[i].length; j++)
+            for (int j = 0; j < matrix[0].length; j++)
             {
                 if (i == j || i + j == matrix.length-1)
                 {
@@ -113,9 +115,23 @@ public class Main {
             }
             System.out.println();
         }
+        System.out.println();
 
+            //task6*
+        int[] q = {5, 4, 3, 2, 1};
+       System.out.println(Arrays.toString(q));
+
+       int [] w = new int[q.length];
+       int i1 = 0;
+
+       for ( int i = 0; i < q.length ; i++)
+            {
+                w [i1 ++] = q [q.length -1 - i];
+            }
+       System.out.println(Arrays.toString(w));
 
     }
+        //task7*
 
 
 }
